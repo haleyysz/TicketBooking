@@ -1,0 +1,757 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: white;
+}
+
+hr{
+	color: gray;
+}
+
+.fl{
+	float: left;
+}
+.pointer{
+	cursor: pointer;
+}
+
+.header,
+.main,
+.footer {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input {
+	width: 100%;
+	margin-bottom: 10px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: black;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	-moz-border-radius: 25px;
+	box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+
+.input:focus {
+	box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.input[type=text]:focus,
+.input[type=password]:focus {
+	outline: none;
+	border-color: #51a7e8;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5);
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+.top {
+	width: 1200px;
+	height: 80px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	overflow: visible;
+}
+
+.top1 {
+	margin-top: 10px;
+	float: left;
+}
+
+.top2 {
+	float: right;
+	margin-top: 15px;
+}
+
+.top .top1 img{
+	float: left;
+	display: inline-block;
+	max-height: 60px;
+	max-width: 60px;
+}
+
+.top .top1 h1{
+	float: left;
+	display: inline-block;
+	width: 500px;
+	height: 50px; 
+	margin-top: 10px;
+}
+
+.top .top1 h1 strong{
+	margin-right: 70px;
+}
+
+.top .top2 input{
+	width: 210px;
+}
+
+.menu{
+	opacity: 0.88;
+}
+
+.menu .container-fluid{
+	width: 1200px;
+}
+
+.menu .navbar-brand img{
+	max-height: 50px;
+	max-width: 50px;
+	margin-top: -15px;
+}
+
+.main{
+	width: 1200px;
+	height: 100%;
+	min-height: 620px;
+	padding-top: 170px;
+}
+
+.footer{
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	border:  solid 1px #808080;
+	margin-top: 30px;
+}
+
+.main .content{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.main .content .movie-bg{
+	background: url(../img/post-L-opacity.jpg) no-repeat;
+	background-size: 100%;
+	display: block;
+	width: 1200px;
+	height: 320px;
+}
+
+.main .content .movie-bg .movie{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.2);
+	padding: 20px;
+}
+
+.main .content .movie-bg .movie .poster{
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.main .content .movie-bg .movie .poster img{
+	display: block;
+	float: left;
+	width: 300px;
+	height: 280px;
+	vertical-align: middle;
+}
+
+.main .content .movie-bg .movie .info{
+	color: #FFFFFF;
+	float: left;
+	display: block;
+	padding: 0 0 0 20px;
+}
+
+.main .content .movie-bg .movie .info h3{
+	text-align: left;
+	margin-top: -4px;
+}
+
+.main .star{
+	float: left;
+}
+
+.main .star img{
+	width: 25px;
+	height: 25px;
+}
+
+.main .rating{
+	height: 16px;
+	font-size: 20px;
+	float: left;
+	margin-left: 10px;
+}
+
+.main .rating-1{
+	height: 16px;
+	font-size: 14px;
+	float: left;
+	margin: 7px 0 0 5px;
+}
+
+.main .movie-detail{
+	position: relative;
+	float: left;
+}
+
+.main .movie-detail .des{
+	font-weight: 400;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.main .movie-detail .detail-item{
+	text-align: left;
+}
+
+.main .movie-detail .detail-item .item-title{
+	font-size: 18px;
+}
+
+.main .buy-tickets{
+	margin-left: 710px;
+}
+
+.main .seats{
+	display: inline;
+}
+.main .seats .s-label{
+	margin-bottom: 3px;
+}
+
+.main .seats h1{
+	text-align: left;
+}
+
+.main .seats .cinema{
+	width: 100%;
+	height: auto;
+	margin: 10px -50px 0 0;
+}
+
+.main .seats .cinema .cinema-detail{
+}
+
+.main .seats .cinema ul{
+	list-style-type: none;
+}
+
+.main .seats .cinema .li-s{
+	margin-top: -20px;
+	margin-bottom: -150px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.main .seats .cinema ul li{
+	height: 225px;
+	line-height: 225px;
+}
+
+.main .seats .cinema ul li .cinema-pic{
+	margin-top: 60px;
+}
+
+.main .seats .cinema ul li .cinema-s1{
+	margin-bottom: -20px;
+	height: 20px;
+	width: 250px;
+	font-size: 20px;
+	color: #222222;
+}
+.main .seats .cinema ul li .cinema-n{
+	height: 20px;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.main .seats .cinema ul li .cinema-a{
+	font-size: 14px;
+	color: grey;
+}
+
+.main .seats .date{
+	width: 100%;
+	height: auto;
+	margin: 10px -50px 0 0;
+}
+
+.main .seats .date ul{
+	margin: 40px 0 0 50px;
+	list-style-type: none;
+}
+
+/*.main .seats .date ul li{*/
+	/*height: 70px;*/
+	/*line-height: 58px;*/
+	/*margin: 0 0 0 20px;*/
+	/*cursor: pointer;*/
+	/*border: solid 1px #bac2da;*/
+	/*background: #e8edff;*/
+	/*float: left;*/
+/*}*/
+.time_select{
+	width: 250px;
+	font-size: 16px;
+	color: #FFF;
+	height: 70px;
+	padding: .5em;
+	line-height: 58px;
+	margin: 5px;
+	cursor: pointer;
+	border: solid 1px #eeeeee;
+	background: #337ab7;
+	border-radius: 4px;
+	float: left;
+}
+.time_default{
+	width: 250px;
+	font-size: 16px;
+	height: 70px;
+	padding: .5em;
+	line-height: 58px;
+	margin: 5px;
+	cursor: pointer;
+	border: solid 1px #222222;
+	background: #eeeeee;
+	border-radius: 4px;
+	float: left;
+}
+.stepwizard-step p {
+	margin-top: 10px;
+}
+.stepwizard-row {
+	display: table-row;
+}
+.stepwizard {
+	display: table;
+	width: 50%;
+	position: relative;
+}
+.stepwizard-step button[disabled] {
+	opacity: 1 !important;
+	filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+	top: 14px;
+	bottom: 0;
+	position: absolute;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+	z-order: 0;
+}
+.stepwizard-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+}
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 12px;
+	line-height: 1.428571429;
+	border-radius: 20px;
+}
+
+.screen img{
+	width: 550px;
+	margin-left: -20px;
+}
+
+.seat-detail{
+	background-color: #808080; 
+	display: inline-block; 
+	width: 2em;
+	height: 2em; 
+	margin: .5em;
+}
+
+.seat-info{
+	display: inline;
+	
+}
+
+.seat-details{
+	background-color: #808080; 
+	display: inline-block; 
+	float: left;
+	width: 2em;
+	height: 2em; 
+	margin: 10px 0 0 50px;
+}
+.seat-detailss{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #808080; 
+	display: inline-block; 
+	float: left;
+	width: 2em;
+	height: 2em; 
+	margin: 30px 0 0 50px;
+}
+
+.seat-txt{
+	float: left;
+	margin-top: 5px;
+}
+
+.step{
+	font-weight: 600;
+	font-style: italic;
+	font-family: 'Times New Roman';
+}
+
+.b-margin{
+	margin: 20px 0 0 50px;
+}
+
+.b-margin1{
+	margin: 20px 0 0 600px;
+}
+
+.b-margin2{
+}
+
+.stepwizard-step{
+	width: 200px;
+	height: 70px;
+}
+
+.ticNum{
+	width: 400px;
+	font-size: 22px;
+	font-weight: 700;
+	font-style: italic;
+	font-family: 'Times New Roman';
+	margin-bottom: 20px;
+}
+.visa{
+	margin: 10px 0 10px 0;
+}
+
+.enterTic{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	display: inline-block;
+}
+#exampleInputAmount{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'Times New Roman';
+}
+
+.ticPrice{
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Times New Roman';
+	text-align: left;
+}
+#step-3{
+	width: 1200px;
+}
+
+.cardd{
+	width: 400px;
+	height: 400px;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+}
+.card-title1{
+	font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    color: rgba(0, 0, 0, .4);
+}
+
+.card-text {
+    margin-top: .5em;
+    word-wrap:break-word;
+    color: rgba(0, 0, 0, .68);
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.profile {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-inline {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.profile-inline ~ .card-title {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.meta {
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a:hover {
+    color: rgba(0, 0, 0, .87);
+}
+
+
+.ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
+  margin: 20px auto;
+}
+.ticket .stub,
+.ticket .check {
+  box-sizing: border-box;
+}
+.stub {
+  background: #ef5658;
+  height: 250px;
+  width: 250px;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+.stub:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 20px solid #ffffff;
+  border-left: 20px solid #ef5658;
+  width: 0;
+}
+.stub:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 20px solid #ffffff;
+  border-left: 20px solid #ef5658;
+  width: 0;
+}
+.stub .topp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  text-transform: uppercase;
+}
+.stub .topp .line {
+  display: block;
+  background: #fff;
+  height: 40px;
+  width: 3px;
+  margin: 0 20px;
+}
+.stub .topp .num {
+  font-size: 10px;
+}
+.stub .topp .num span {
+  color: #000;
+}
+.stub .number {
+	margin-top: -20px;
+  font-size: 150px;
+}
+.stub .invite {
+  position: absolute;
+  left: 150px;
+  bottom: 45px;
+  color: #000;
+  width: 20%;
+}
+.stub .invite:before {
+  content: '';
+  background: #fff;
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+.check {
+  background: #CCCCCC;
+  height: 250px;
+  width: 450px;
+  padding: 40px;
+  position: relative;
+}
+.check:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 20px solid #FFFFFF;
+  border-right: 20px solid #CCCCCC;
+  width: 0;
+}
+.check:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 20px solid #FFFFFF;
+  border-right: 20px solid #CCCCCC;
+  width: 0;
+}
+.check .big {
+    margin: -30px 0px 20px 0;
+    font-size: 62px;
+    font-weight: 900;
+    line-height: 0.88em;
+}
+.check .number {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #ef5658;
+  font-size: 40px;
+}
+.check .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 12px;
+  width: 100%;
+  margin: -10px 0 0 20px;
+  text-align:left;
+}
+.check .info section {
+	width: 100px;
+	height: 60px;
+  margin-right: 60px;
+}
+.check .info section:before {
+  content: '';
+  background: #ef5658;
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+.check .info section .title {
+	width: 60px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.err{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.tip{
+	font-size: 22px;
+	font-weight: 700;
+	font-family: 'Times New Roman';
+}
